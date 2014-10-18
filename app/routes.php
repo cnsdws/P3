@@ -13,5 +13,15 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return 'Main Page /';
+});
+
+Route::get('/latin', function()
+{
+	return 'Latin Page /';
+});
+
+Route::get('/user', function()
+{
+	return 'user Page /';
 });
