@@ -13,7 +13,13 @@
 
 Route::get('/', function()
 {
-	return 'Main Page /';
+	return View::make('Main');
+});
+
+Route::post('lorem', function()
+{
+	$pLength = _POST('pLength');
+	return View::make('Main');
 });
 
 Route::get('/latin', function()
@@ -22,6 +28,11 @@ Route::get('/latin', function()
 });
 
 Route::get('/user', function()
+{
+	return 'user Page /';
+});
+
+Route::get('/users', function()
 {
 	return 'user Page /';
 });
