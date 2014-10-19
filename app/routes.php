@@ -13,18 +13,23 @@
 
 Route::get('/', function()
 {
-	return View::make('Main');
+	return View::make('main');
 });
 
-Route::post('lorem', function()
+Route::post('Main', function()
 {
-	$pLength = _POST('pLength');
-	return View::make('Main');
+    return 'Hello World';
 });
 
-Route::get('/latin', function()
+
+Route::get('/lorem/{pLength?}', function($pLength = 1)
 {
-	return 'Latin Page /';
+	//$data =  array('$pLength');
+
+	//$generator = new Badcow\LoremIpsum\Generator();
+	//$paragraphs = $generator->getParagraphs($pLength);
+	//return implode('<p>', $paragraphs);
+	return View::make('lorem') ->with('pLength', $pLength);
 });
 
 Route::get('/user', function()
