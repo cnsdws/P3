@@ -24,11 +24,11 @@ Route::post('Main', function()
 
 Route::get('/lorem/{pLength?}', function($pLength = 1)
 {
-	//$data =  array('$pLength');
+	return View::make('lorem') ->with('pLength', $pLength);
+});
 
-	//$generator = new Badcow\LoremIpsum\Generator();
-	//$paragraphs = $generator->getParagraphs($pLength);
-	//return implode('<p>', $paragraphs);
+Route::post('/lorem/{pLength?}', function($pLength = 1)
+{
 	return View::make('lorem') ->with('pLength', $pLength);
 });
 
