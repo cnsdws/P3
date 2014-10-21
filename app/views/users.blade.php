@@ -12,12 +12,19 @@
 
 	<h3>Enter the number of Users you need to generate and press the button. It's that easy!!</h3>
 
+	<!-- This section sets up the parameters for the user generation -->
 	<form method = 'POST'>
-		    <input type="number" name="uLength" placeholder="1-20" min="0" max="20" required id = 'uLength'>
+		    Number of users: <input type="number" name="uLength" placeholder="1-20" min="0" max="20" required id = 'uLength'> <br>
+		    Include: <br>
+		    <input type="checkbox" name="uName" value='uName' checked />  Name<br>
+		    <input type="checkbox" name="uAddress" value='uAddress' checked />  Address<br>
+		    <input type="checkbox" name="uPhone" value='uPhone' checked />  Phone Number<br>
+		    <input type="checkbox" name="uMail" value='uMail' checked />  Email<br><br>
 		    <input type = 'submit' value = 'Generate'>	
 	</form>
 	<br>
 
+	<!-- This section generates the users -->
 	<?php
 		
 		$uLength = 0;
@@ -29,14 +36,18 @@
 			$faker = Faker\Factory::create();
 
 			// generate data by accessing properties
-			echo 'Name: '.$faker->name;
-			echo '<br>';
-			echo 'Address: '.$faker->address;
-			echo '<br>';
-			echo 'Phone: '.$faker->phoneNumber;
-			echo '<br>';
-			echo 'Email: '.$faker->email;
-			echo '<br>';
+			if(isset($_POST['uName'])){ echo 'Name: '.$faker->name;
+				echo '<br>'; }
+
+			if(isset($_POST['uAddress'])){ echo 'Address: '.$faker->address;
+			echo '<br>'; }
+
+			if(isset($_POST['uPhone'])){ echo 'Phone: '.$faker->phoneNumber;
+			echo '<br>'; }
+
+			if(isset($_POST['uMail'])){ echo 'Email: '.$faker->email;
+			echo '<br>'; }
+
 			echo '<br>';
 		}
 	?>

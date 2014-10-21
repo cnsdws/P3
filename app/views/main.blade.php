@@ -4,6 +4,7 @@
 <link href="../css/bootstrap.css" rel="stylesheet">
 @stop
 
+<!-- Main page section for the Lorem text generator -->
 @section('Lorem')
 
 <h1 class="media-heading">Project 3 - Lorem Ipsum and Faux User Generator</h1>
@@ -19,7 +20,7 @@
 		    </section>
 		    <section>
 		    	Here's a sample:
-		  
+		        
 				<?php
 					$generator = new Badcow\LoremIpsum\Generator();
 					$paragraphs = $generator->getParagraphs(1);
@@ -28,7 +29,7 @@
 			</section>
 			
 @stop
-
+<!-- Main page section for the user generator -->
 @section('Users')
 
 		<h3>User Generator</h3>
@@ -42,17 +43,20 @@
 		    	<p>Here's an example:</p>
 
 		    	<?php
-								// use the factory to create a Faker\Generator instance
+					
+					// use the factory to create a Faker\Generator instance
 					$faker = Faker\Factory::create();
 
 					// generate data by accessing properties
 					echo 'Name: '.$faker->name;
-				  	// 'Lucy Cechtelar';
+				  	echo '<br>'; 
+				  	echo 'Address: '.$faker->address;
+					echo '<br>'; 
+					echo 'Phone: '.$faker->phoneNumber;
 					echo '<br>';
-					echo 'Address: '.$faker->address;
-				  	// "426 Jordy Lodge
-				  	// Cartwrightshire, SC 88120-6700"
-				
+					echo 'Email: '.$faker->email;
+					echo '<br>'; 
 				?>
+			</section>
 
 @stop

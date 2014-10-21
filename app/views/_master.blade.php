@@ -58,8 +58,7 @@
             <div class="media-body">
               
 		            @yield('Lorem')
-	              <br>
-                @yield('Users')    
+	              @yield('Users')    
                      
             </div>
           </li>
