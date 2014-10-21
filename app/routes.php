@@ -22,22 +22,32 @@ Route::post('Main', function()
 });
 
 
-Route::get('/lorem/{pLength?}', function($pLength = 1)
+Route::get('/lorem', function()
 {
-	return View::make('lorem') ->with('pLength', $pLength);
+	return View::make('lorem');
 });
 
-Route::post('/lorem/{pLength?}', function($pLength = 1)
+Route::post('/lorem', function()
 {
-	return View::make('lorem') ->with('pLength', $pLength);
+	return View::make('lorem');
 });
 
-Route::get('/user', function()
+Route::get(strtolower('/user'), function()
 {
-	return 'user Page /';
+	return View::make('users');
 });
 
-Route::get('/users', function()
+Route::get(strtolower('/users'), function()
 {
-	return 'user Page /';
+	return View::make('users');
+});
+
+Route::post(strtolower('/user'), function()
+{
+	return View::make('users');
+});
+
+Route::post(strtolower('/users'), function()
+{
+	return View::make('users');
 });
