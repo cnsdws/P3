@@ -13,7 +13,7 @@ uses the fzaninotto/faker package to do so.
 Both have been integrated into a Laravel framework.
 
 Demo
-Demo URL:  TBD   http://www.screencast.com/users/cnsdws/folders/Default/media/3a6879b5-9c29-4c5b-8727-55a12413c80b
+Demo URL: http://www.screencast.com/users/cnsdws/folders/Default/media/fd4f112e-b0f0-4768-be1e-d39f0ff91e4b
 
 Details for teaching team
 No login required.
