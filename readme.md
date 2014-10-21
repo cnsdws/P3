@@ -1,3 +1,32 @@
+Project 3 - Lorem and User Generator
+
+Live URL
+http://p3.dennisstevens.me
+
+Description
+This website consists of two tools. The first will generate a specified number of paragraphs of pseudo Latin or 
+Lorem Ipsum. It utilizes the badcow/lorem-ipsum package to do so.
+
+The second tool will generate a specified number of users. This will include name, address, phone and email. It 
+uses the fzaninotto/faker package to do so.
+
+Both have been integrated into a Laravel framework.
+
+Demo
+Demo URL:  TBD   http://www.screencast.com/users/cnsdws/folders/Default/media/3a6879b5-9c29-4c5b-8727-55a12413c80b
+
+Details for teaching team
+No login required.
+ 
+
+Outside code
+Bootstrap CSS.
+badcow/lorem-ipsum pacakge
+fzaninotto/faker package
+Laravel PHP framework
+
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
