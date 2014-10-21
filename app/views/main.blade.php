@@ -14,10 +14,8 @@
 	   	your use. 
 	    </p>
 	
-	    <p>
-	   	<h4> <a href="http://p3.dennisstevens.me/lorem">Generate Lorem</a> </h4>
-	    </p>
-	
+	    <h4> <a href="http://p3.dennisstevens.me/lorem">Generate Lorem</a> </h4>
+	    	
 	    <p>
 	   	Here's a sample:
 		        
