@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function()
+Route::get('/{pLength?}', function($pLength = 0)
 {
 	return View::make('main');
 });
@@ -30,6 +30,11 @@ Route::get('/lorem', function()
 Route::post('/lorem', function()
 {
 	return View::make('lorem');
+});
+
+Route::get('/lorem/{pLength?}', function($pLength = 0)
+{
+	return View::make('lorem') ->with('pLength', $pLength);
 });
 
 Route::get(strtolower('/user'), function()
