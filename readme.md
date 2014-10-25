@@ -3,6 +3,9 @@ Project 3 - Lorem and User Generator
 Live URL
 http://p3.dennisstevens.me
 
+Github URL
+https://github.com/cnsdws/P3
+
 Description
 This website consists of two tools. The first will generate a specified number of paragraphs of pseudo Latin or 
 Lorem Ipsum. It utilizes the badcow/lorem-ipsum package to do so.
